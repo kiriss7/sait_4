@@ -1,5 +1,254 @@
-*{
+/* шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Revalia&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* классические настройки */
+* {
     box-sizing: border-box;
-    padding: 0 ;
+    padding: 0;
     margin: 0;
+}
+
+:root {
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Revalia", sans-serif;
+}
+
+img {
+    user-select: none;
+    pointer-events: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* первый раздел */
+.header{
+    margin-bottom: 267px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-top: 50px;
+    align-items: center;
+
+}
+
+.logo {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    color: #34547a;
+}
+
+.menu_papa {
+    display: flex;
+    gap: 42px;
+    list-style: none;
+    padding-right: 10px;
+    padding-top: 2px;
+
+}
+
+.menu_item {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 164%;
+    letter-spacing: 0.1em;
+    color: #000;
+}
+
+.menu_item:hover {
+    color: rgba(52, 84, 122, 1);
+    cursor: pointer;
+}
+
+.header_papa {
+    display: flex;
+    gap: 130px;
+    padding-left: 80px;
+    align-items: flex-start;
+
+}
+
+.img_header {
+    padding-top: 160px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.text_header {}
+
+
+
+.title_text_header {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 164%;
+    color: #000;
+    padding-top: 130px;
+}
+
+.text_texr_header {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 164%;
+    color: #727272;
+    padding-top: 35px;
+}
+
+.button_go {}
+
+.button_text_header {
+    width: 225px;
+    height: 65px;
+    background-color: #34547a;
+    display: block;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 164%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: auto;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+.button_text_header:hover{
+    background-color:#34537ab9 ;
+}
+
+@media screen and (max-width: 1100px){
+    .menu{
+        padding: 0 10px;
+    }
+    .header_papa{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 0 10px;
+        margin: 0;   
+}
+.title_text_header{
+    padding-top: 0;
+}
+.button_text_header{
+    margin: 40px auto 0;
+
+}
+br{
+    display: none;
+}
+.text_texr_header{max-width: 500px;}
+.number_papa{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(2,1fr);
+    justify-items: center;
+}
+    
+}
+@media screen and (max-width: 800px){
+    .menu{
+
+        flex-direction: column;
+        justify-content: center;   
+        text-align: center; 
+    }
+    .menu_papa{
+        flex-direction: column;
+        gap: 50px;
+        padding: 30px 0;
+    }
+    .aboit_me{
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 500px){
+    .number_papa{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:repeat(3,1fr);
+    }
+}
+/* секция "Обо мне" */
+.aboit_me {
+    margin-bottom: 90px;
+}
+.container_aboutMe {
+    max-width:  540px;
+    margin: 0 auto;
+    text-align: center;
+}
+._aboutMe_title {
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 32px;
+text-align: center;
+color: #000;
+}
+.aboutMe_text {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 164%;
+text-align: center;
+color: #727272;
+padding-top: 40px;
+}
+/* секция номера */
+.numbers_bgc {
+    background-color:  #34547a;
+    min-height: 250px;
+}
+.number_papa {
+    display: grid;
+    justify-content: space-between;
+    min-height: 250px;
+    align-items: center;
+    grid-auto-flow: column;
+
+}
+.number_item {
+    display: flex;
+    gap: 5px;
+}
+.icons {
+}
+.number_item_text {
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 21px;
+color: #fff;
+
+}
+.number_item_text_number {
+}
+.number_item_text_text {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 164%;
+color: #fff;
 }
