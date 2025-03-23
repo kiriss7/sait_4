@@ -482,7 +482,7 @@ body {
 .papa_footer {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 .title_footer {
